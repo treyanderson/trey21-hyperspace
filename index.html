@@ -133,24 +133,20 @@
 							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
+									<!-- Formspree Form -->
+									<form action="https://formspree.io/f/xzbneadd" method="POST">
+										<label>
+											Your email:
+											<input type="email" name="email" required>
+										</label>
+										<br>
+										<label>
+											Your message:
+											<textarea name="message" required></textarea>
+										</label>
+										<br>
+										<!-- Any additional form fields you want to add can go here -->
+										<button type="submit">Send</button>
 									</form>
 								</section>
 								<section>
@@ -163,7 +159,7 @@
 										</li>
 										<li>
 											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
+											<a href="mailto:your-email@example.com">your-email@example.com</a>
 										</li>
 										<li>
 											<h3>Phone</h3>
@@ -185,44 +181,43 @@
 						</div>
 					</section>
 
-			</div>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+							<!-- Footer -->
+								<footer id="footer" class="wrapper style1-alt">
+									<div class="inner">
+										<ul class="menu">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+								</footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
-			<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-			<df-messenger
-			  project-id="trey21"
-			  agent-id="7b923d58-ca9c-429f-9bc4-4e7339ccd6da"
-			  language-code="en"
-			  max-query-length="-1">
-			  <df-messenger-chat-bubble
-			   chat-title="Trey21 Chatbot">
-			  </df-messenger-chat-bubble>
-			</df-messenger>
-			<style>
-			  df-messenger {
-			    z-index: 999;
-			    position: fixed;
-			    bottom: 16px;
-			    right: 16px;
-			  }
-</style>
+							<!-- Scripts -->
+								<script src="assets/js/jquery.min.js"></script>
+								<script src="assets/js/jquery.scrollex.min.js"></script>
+								<script src="assets/js/jquery.scrolly.min.js"></script>
+								<script src="assets/js/browser.min.js"></script>
+								<script src="assets/js/breakpoints.min.js"></script>
+								<script src="assets/js/util.js"></script>
+								<script src="assets/js/main.js"></script>
+								<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+								<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+								<df-messenger
+								project-id="trey21"
+								agent-id="7b923d58-ca9c-429f-9bc4-4e7339ccd6da"
+								language-code="en"
+								max-query-length="-1">
+								<df-messenger-chat-bubble
+								chat-title="Trey21 Chatbot">
+								</df-messenger-chat-bubble>
+								</df-messenger>
+								<style>
+								df-messenger {
+									z-index: 999;
+									position: fixed;
+									bottom: 16px;
+									right: 16px;
+								}
+					</style>
 			}
 </style>
 
